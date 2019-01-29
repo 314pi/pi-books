@@ -1,0 +1,86 @@
+﻿Khoảng cách đường bộ từ
+Hà Nội đến các địa phương
+-------------------------
+Ba Vì---56
+Bạc Liêu---1.990
+Bãi Cháy---149
+Bắc Kạn---166 
+Bắc Giang---51
+Bắc Ninh---31
+Bến Thủy---296
+Bến Tre---1.795
+Biên Hòa---1.684
+Buôn Ma Thuột---1.390
+Cà Mau---2.057
+Cao Bằng---272
+Cẩm Phả---180
+Cần Thơ---1.877
+Cầu Hiền Lương---963
+Chợ Lớn---1.721
+Ðà Lạt---1.481
+Ðà Nẵng---763
+Ðèo Ngang---423
+Ðiện Biên Phủ---474
+Ðò Lèn---131
+Ðoan Hùng---137
+Ðồ Sơn---123
+Ðông Triều---85
+Ðồng Ðăng---168
+Ðồng Hới---491
+Gia Ðịnh---1.713
+Gia Lâm---4
+Hà Ðông---11
+Hà Giang---318
+Hà Tĩnh---341
+Hải Dương---58
+Hải Phòng---103
+Hòa Bình---76
+Hòn Gai---151
+Hồ Xá---557
+Hồ Ba Bể---241
+TP Hồ Chí Minh---1.710
+Huế---658
+Hưng Yên---64
+Kiến An---114
+Lai Châu(mới)---402
+Lạng Sơn---154
+Lào Cai---338
+Long Xuyên---1.990
+Móng Cái---327
+Mộc Châu---190 
+Mỹ Tho---1.781 
+Ðịnh---90 
+Nghĩa Lộ---266
+Liên---307
+Nha Trang---1.278
+Ninh Bình---93
+Pắc Bó---325
+Phan Rang---1.382
+Phan Thiết---1.518
+Phú Thọ---93
+Phúc Yên---46
+Plei Ku---1.204
+Quảng Ngãi---889
+Quảng Trị---598
+Quy Nhơn---1.065
+Sa Ðéc---1.853
+Sa Pa---376
+Sơn La---308
+Sơn Tây---42
+Tam Ðảo---87
+Tây Ninh---1.809
+Thái Bình---109
+Thái Nguyên---80
+Thanh Hóa---153
+Thủ Dầu Một---1.740 
+Trà Cổ---333
+Tuy Hòa---1.156
+Tuyên Quang---165
+Uông Bí---115
+Việt Trì---85
+Vinh---291
+Vĩnh Long---1.847
+Vĩnh Yên---63
+Xuân Mai---36
+Yên Bái---183
+

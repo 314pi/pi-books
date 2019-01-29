@@ -1,0 +1,905 @@
+<wap-provisioningdoc>
+<characteristic type="Install">
+<parm name="InstallPhase" value="install" />
+<parm name="OSVersionMin" value="4.0" />
+<parm name="OSVersionMax" value="6.99" />
+<parm name="BuildNumberMin" value="0" />
+<parm name="BuildNumberMax" value="-536870912" />
+<parm name="AppName" value="PA18 SETUPLGT" />
+<parm name="InstallDir" value="%CE1%\SETUPLGT" translation="install" />
+<parm name="NumDirs" value="6" />
+<parm name="NumFiles" value="174" />
+<parm name="NumRegKeys" value="0" />
+<parm name="NumRegVals" value="0" />
+<parm name="NumShortcuts" value="1" />
+</characteristic>
+<characteristic type="FileOperation">
+<characteristic type="%CE1%\VMSLUATGTDB\PICS" translation="install">
+<characteristic type="MakeDir" />
+<characteristic type="131c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000131c.001" />
+</characteristic>
+</characteristic>
+<characteristic type="107.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000107.002" />
+</characteristic>
+</characteristic>
+<characteristic type="h216.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h216.003" />
+</characteristic>
+</characteristic>
+<characteristic type="l13.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l13.004" />
+</characteristic>
+</characteristic>
+<characteristic type="l6.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l6.006" />
+</characteristic>
+</characteristic>
+<characteristic type="l14.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l14.007" />
+</characteristic>
+</characteristic>
+<characteristic type="112.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000112.008" />
+</characteristic>
+</characteristic>
+<characteristic type="111d.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000111d.009" />
+</characteristic>
+</characteristic>
+<characteristic type="127.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000127.010" />
+</characteristic>
+</characteristic>
+<characteristic type="h305.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h305.011" />
+</characteristic>
+</characteristic>
+<characteristic type="h211.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h211.012" />
+</characteristic>
+</characteristic>
+<characteristic type="h223a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h223a.014" />
+</characteristic>
+</characteristic>
+<characteristic type="l8.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l8.015" />
+</characteristic>
+</characteristic>
+<characteristic type="h301i.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301i.017" />
+</characteristic>
+</characteristic>
+<characteristic type="h201b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h201b.019" />
+</characteristic>
+</characteristic>
+<characteristic type="104.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000104.021" />
+</characteristic>
+</characteristic>
+<characteristic type="h301d.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301d.022" />
+</characteristic>
+</characteristic>
+<characteristic type="111a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000111a.023" />
+</characteristic>
+</characteristic>
+<characteristic type="h233.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h233.024" />
+</characteristic>
+</characteristic>
+<characteristic type="h217.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h217.026" />
+</characteristic>
+</characteristic>
+<characteristic type="h309.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h309.028" />
+</characteristic>
+</characteristic>
+<characteristic type="111b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000111b.029" />
+</characteristic>
+</characteristic>
+<characteristic type="h208.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h208.030" />
+</characteristic>
+</characteristic>
+<characteristic type="129.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000129.031" />
+</characteristic>
+</characteristic>
+<characteristic type="l5.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l5.032" />
+</characteristic>
+</characteristic>
+<characteristic type="h301c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301c.033" />
+</characteristic>
+</characteristic>
+<characteristic type="h239.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h239.034" />
+</characteristic>
+</characteristic>
+<characteristic type="135.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000135.036" />
+</characteristic>
+</characteristic>
+<characteristic type="h228b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h228b.037" />
+</characteristic>
+</characteristic>
+<characteristic type="l3.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l3.038" />
+</characteristic>
+</characteristic>
+<characteristic type="h307.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h307.039" />
+</characteristic>
+</characteristic>
+<characteristic type="114.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000114.042" />
+</characteristic>
+</characteristic>
+<characteristic type="h221b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h221b.043" />
+</characteristic>
+</characteristic>
+<characteristic type="h226.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h226.044" />
+</characteristic>
+</characteristic>
+<characteristic type="118.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000118.045" />
+</characteristic>
+</characteristic>
+<characteristic type="111c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000111c.046" />
+</characteristic>
+</characteristic>
+<characteristic type="h223b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h223b.048" />
+</characteristic>
+</characteristic>
+<characteristic type="h201a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h201a.050" />
+</characteristic>
+</characteristic>
+<characteristic type="l7.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l7.051" />
+</characteristic>
+</characteristic>
+<characteristic type="h203a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h203a.052" />
+</characteristic>
+</characteristic>
+<characteristic type="l16.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l16.053" />
+</characteristic>
+</characteristic>
+<characteristic type="131b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000131b.054" />
+</characteristic>
+</characteristic>
+<characteristic type="h204.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h204.056" />
+</characteristic>
+</characteristic>
+<characteristic type="103a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000103a.057" />
+</characteristic>
+</characteristic>
+<characteristic type="h206.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h206.059" />
+</characteristic>
+</characteristic>
+<characteristic type="h301a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301a.060" />
+</characteristic>
+</characteristic>
+<characteristic type="h209.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h209.061" />
+</characteristic>
+</characteristic>
+<characteristic type="h308b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h308b.062" />
+</characteristic>
+</characteristic>
+<characteristic type="140.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000140.063" />
+</characteristic>
+</characteristic>
+<characteristic type="h238.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h238.064" />
+</characteristic>
+</characteristic>
+<characteristic type="113.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000113.065" />
+</characteristic>
+</characteristic>
+<characteristic type="h215b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h215b.066" />
+</characteristic>
+</characteristic>
+<characteristic type="130.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000130.067" />
+</characteristic>
+</characteristic>
+<characteristic type="h203c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h203c.070" />
+</characteristic>
+</characteristic>
+<characteristic type="h301f.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301f.071" />
+</characteristic>
+</characteristic>
+<characteristic type="l12.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l12.072" />
+</characteristic>
+</characteristic>
+<characteristic type="h220.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h220.073" />
+</characteristic>
+</characteristic>
+<characteristic type="h212.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h212.074" />
+</characteristic>
+</characteristic>
+<characteristic type="h205b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h205b.075" />
+</characteristic>
+</characteristic>
+<characteristic type="h230.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h230.076" />
+</characteristic>
+</characteristic>
+<characteristic type="120.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000120.077" />
+</characteristic>
+</characteristic>
+<characteristic type="138.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000138.078" />
+</characteristic>
+</characteristic>
+<characteristic type="122.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000122.079" />
+</characteristic>
+</characteristic>
+<characteristic type="h210.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h210.080" />
+</characteristic>
+</characteristic>
+<characteristic type="123a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000123a.081" />
+</characteristic>
+</characteristic>
+<characteristic type="h306.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h306.085" />
+</characteristic>
+</characteristic>
+<characteristic type="106b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000106b.086" />
+</characteristic>
+</characteristic>
+<characteristic type="116.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000116.087" />
+</characteristic>
+</characteristic>
+<characteristic type="h225.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h225.088" />
+</characteristic>
+</characteristic>
+<characteristic type="h303.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h303.089" />
+</characteristic>
+</characteristic>
+<characteristic type="h242a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h242a.090" />
+</characteristic>
+</characteristic>
+<characteristic type="h222.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h222.091" />
+</characteristic>
+</characteristic>
+<characteristic type="134.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000134.092" />
+</characteristic>
+</characteristic>
+<characteristic type="h203b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h203b.093" />
+</characteristic>
+</characteristic>
+<characteristic type="l9.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l9.094" />
+</characteristic>
+</characteristic>
+<characteristic type="133.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000133.095" />
+</characteristic>
+</characteristic>
+<characteristic type="l2.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l2.096" />
+</characteristic>
+</characteristic>
+<characteristic type="103c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000103c.098" />
+</characteristic>
+</characteristic>
+<characteristic type="132.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000132.099" />
+</characteristic>
+</characteristic>
+<characteristic type="119.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000119.100" />
+</characteristic>
+</characteristic>
+<characteristic type="115.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000115.101" />
+</characteristic>
+</characteristic>
+<characteristic type="h302b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h302b.102" />
+</characteristic>
+</characteristic>
+<characteristic type="110a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000110a.103" />
+</characteristic>
+</characteristic>
+<characteristic type="h229.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h229.104" />
+</characteristic>
+</characteristic>
+<characteristic type="l10.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l10.106" />
+</characteristic>
+</characteristic>
+<characteristic type="110b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000110b.108" />
+</characteristic>
+</characteristic>
+<characteristic type="136.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000136.109" />
+</characteristic>
+</characteristic>
+<characteristic type="137.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000137.110" />
+</characteristic>
+</characteristic>
+<characteristic type="h207c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h207c.111" />
+</characteristic>
+</characteristic>
+<characteristic type="139.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000139.112" />
+</characteristic>
+</characteristic>
+<characteristic type="h214.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h214.113" />
+</characteristic>
+</characteristic>
+<characteristic type="124b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000124b.114" />
+</characteristic>
+</characteristic>
+<characteristic type="106a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000106a.115" />
+</characteristic>
+</characteristic>
+<characteristic type="l4.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l4.117" />
+</characteristic>
+</characteristic>
+<characteristic type="h240.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h240.118" />
+</characteristic>
+</characteristic>
+<characteristic type="h227.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h227.119" />
+</characteristic>
+</characteristic>
+<characteristic type="h228a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h228a.120" />
+</characteristic>
+</characteristic>
+<characteristic type="h207a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h207a.121" />
+</characteristic>
+</characteristic>
+<characteristic type="h218.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h218.122" />
+</characteristic>
+</characteristic>
+<characteristic type="h301h.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301h.123" />
+</characteristic>
+</characteristic>
+<characteristic type="h219.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h219.124" />
+</characteristic>
+</characteristic>
+<characteristic type="h235.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h235.125" />
+</characteristic>
+</characteristic>
+<characteristic type="101.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000101.127" />
+</characteristic>
+</characteristic>
+<characteristic type="h231.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h231.128" />
+</characteristic>
+</characteristic>
+<characteristic type="105.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000105.129" />
+</characteristic>
+</characteristic>
+<characteristic type="h302a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h302a.130" />
+</characteristic>
+</characteristic>
+<characteristic type="h215a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h215a.131" />
+</characteristic>
+</characteristic>
+<characteristic type="123b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000123b.132" />
+</characteristic>
+</characteristic>
+<characteristic type="h301b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301b.133" />
+</characteristic>
+</characteristic>
+<characteristic type="h301e.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h301e.134" />
+</characteristic>
+</characteristic>
+<characteristic type="h213.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h213.136" />
+</characteristic>
+</characteristic>
+<characteristic type="l15.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l15.137" />
+</characteristic>
+</characteristic>
+<characteristic type="h232.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h232.139" />
+</characteristic>
+</characteristic>
+<characteristic type="h205a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h205a.140" />
+</characteristic>
+</characteristic>
+<characteristic type="125.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000125.141" />
+</characteristic>
+</characteristic>
+<characteristic type="102.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000102.142" />
+</characteristic>
+</characteristic>
+<characteristic type="121.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000121.143" />
+</characteristic>
+</characteristic>
+<characteristic type="103b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000103b.144" />
+</characteristic>
+</characteristic>
+<characteristic type="124a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000124a.145" />
+</characteristic>
+</characteristic>
+<characteristic type="h304.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h304.146" />
+</characteristic>
+</characteristic>
+<characteristic type="h224.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h224.147" />
+</characteristic>
+</characteristic>
+<characteristic type="h202.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h202.148" />
+</characteristic>
+</characteristic>
+<characteristic type="h237.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h237.149" />
+</characteristic>
+</characteristic>
+<characteristic type="l11.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l11.150" />
+</characteristic>
+</characteristic>
+<characteristic type="h241.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h241.154" />
+</characteristic>
+</characteristic>
+<characteristic type="109.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000109.155" />
+</characteristic>
+</characteristic>
+<characteristic type="h205d.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h205d.156" />
+</characteristic>
+</characteristic>
+<characteristic type="h308a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h308a.157" />
+</characteristic>
+</characteristic>
+<characteristic type="h205c.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h205c.158" />
+</characteristic>
+</characteristic>
+<characteristic type="h221a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h221a.160" />
+</characteristic>
+</characteristic>
+<characteristic type="108.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000108.161" />
+</characteristic>
+</characteristic>
+<characteristic type="h242b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h242b.162" />
+</characteristic>
+</characteristic>
+<characteristic type="l17.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000l17.163" />
+</characteristic>
+</characteristic>
+<characteristic type="h207b.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000h207b.164" />
+</characteristic>
+</characteristic>
+<characteristic type="128.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000128.165" />
+</characteristic>
+</characteristic>
+<characteristic type="131a.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000131a.167" />
+</characteristic>
+</characteristic>
+<characteristic type="l1.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000000l1.169" />
+</characteristic>
+</characteristic>
+<characteristic type="126.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000126.170" />
+</characteristic>
+</characteristic>
+<characteristic type="117.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000117.171" />
+</characteristic>
+</characteristic>
+<characteristic type="h234.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h234.172" />
+</characteristic>
+</characteristic>
+<characteristic type="h236.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000h236.174" />
+</characteristic>
+</characteristic>
+</characteristic>
+<characteristic type="%CE1%\VMSLUATGTDB\DATA" translation="install">
+<characteristic type="MakeDir" />
+<characteristic type="vmlgt6.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt6.005" />
+</characteristic>
+</characteristic>
+<characteristic type="vmktlx.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmktlx.013" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt4.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt4.018" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt2.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt2.020" />
+</characteristic>
+</characteristic>
+<characteristic type="vmshd2.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmshd2.027" />
+</characteristic>
+</characteristic>
+<characteristic type="vmbtxe.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmbtxe.035" />
+</characteristic>
+</characteristic>
+<characteristic type="CauHoiLGT.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="CAUHOI~1.058" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt3.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt3.068" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt0.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt0.082" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt1.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt1.105" />
+</characteristic>
+</characteristic>
+<characteristic type="vmsbbcam.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="vmsbbcam.107" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt7.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt7.116" />
+</characteristic>
+</characteristic>
+<characteristic type="logoat.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00logoat.126" />
+</characteristic>
+</characteristic>
+<characteristic type="vmsbbcd.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0vmsbbcd.135" />
+</characteristic>
+</characteristic>
+<characteristic type="vmshd1.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmshd1.151" />
+</characteristic>
+</characteristic>
+<characteristic type="vmsbbhl.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0vmsbbhl.159" />
+</characteristic>
+</characteristic>
+<characteristic type="vmsbbnh.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0vmsbbnh.166" />
+</characteristic>
+</characteristic>
+<characteristic type="vmlgt5.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00vmlgt5.168" />
+</characteristic>
+</characteristic>
+<characteristic type="conf.vmd" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000conf.173" />
+</characteristic>
+</characteristic>
+</characteristic>
+<characteristic type="%CE1%\VMSLUATGTDB\BG" translation="install">
+<characteristic type="MakeDir" />
+<characteristic type="BGM.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000BGM.016" />
+</characteristic>
+</characteristic>
+<characteristic type="win.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000win.047" />
+</characteristic>
+</characteristic>
+<characteristic type="lose.jpg" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000lose.049" />
+</characteristic>
+</characteristic>
+<characteristic type="BG1.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000BG1.069" />
+</characteristic>
+</characteristic>
+<characteristic type="BG2.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000BG2.097" />
+</characteristic>
+</characteristic>
+<characteristic type="BG3.gif" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="00000BG3.152" />
+</characteristic>
+</characteristic>
+</characteristic>
+<characteristic type="%CE1%\VMSLUATGTDB\AUDIO" translation="install">
+<characteristic type="MakeDir" />
+<characteristic type="Hello.mp3" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000Hello.025" />
+</characteristic>
+</characteristic>
+<characteristic type="April.mp3" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="000April.055" />
+</characteristic>
+</characteristic>
+<characteristic type="Holy.mp3" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="0000Holy.084" />
+</characteristic>
+</characteristic>
+</characteristic>
+<characteristic type="%CE1%\VMSLUATGTDB" translation="install">
+<characteristic type="MakeDir" />
+<characteristic type="Microsoft.WindowsMobile.xml" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="MICROS~2.040" />
+</characteristic>
+</characteristic>
+<characteristic type="Microsoft.WindowsMobile.dll" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="MICROS~1.041" />
+</characteristic>
+</characteristic>
+<characteristic type="Microsoft.WindowsMobile.PocketOutlook.dll" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="MICROS~2.083" />
+</characteristic>
+</characteristic>
+<characteristic type="Microsoft.WindowsMobile.PocketOutlook.xml" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="MICROS~1.138" />
+</characteristic>
+</characteristic>
+<characteristic type="VMSHOCLUATGT.exe" translation="install">
+<characteristic type="Extract">
+<parm name="Source" value="VMSHOC~1.153" />
+</characteristic>
+</characteristic>
+</characteristic>
+</characteristic>
+<characteristic type="Registry">
+</characteristic>
+</wap-provisioningdoc>

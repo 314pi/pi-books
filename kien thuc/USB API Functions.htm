@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www2.hawaii.edu/~hermany/api.htm -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word" xmlns:x = 
+"urn:schemas-microsoft-com:office:excel"><HEAD><TITLE>USB API Functions</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR>
+<META content="Microsoft Word 9" name=Originator><LINK 
+href="./api_files/filelist.xml" rel=File-List><LINK 
+href="./api_files/editdata.mso" rel=Edit-Time-Data><!--[if !mso]>
+<STYLE>v\:* {
+	BEHAVIOR: url(#default#VML)
+}
+o\:* {
+	BEHAVIOR: url(#default#VML)
+}
+w\:* {
+	BEHAVIOR: url(#default#VML)
+}
+.shape {
+	BEHAVIOR: url(#default#VML)
+}
+</STYLE>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>nobody</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>None</o:LastAuthor>
+  <o:Revision>7</o:Revision>
+  <o:TotalTime>145</o:TotalTime>
+  <o:Created>2002-12-12T19:02:00Z</o:Created>
+  <o:LastSaved>2002-12-13T03:56:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>389</o:Words>
+  <o:Characters>2219</o:Characters>
+  <o:Company>Department of Electrical Engineering, UH</o:Company>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2725</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>75</w:Zoom>
+  <w:DrawingGridHorizontalSpacing>9.35 pt</w:DrawingGridHorizontalSpacing>
+  <w:DisplayVerticalDrawingGridEvery>2</w:DisplayVerticalDrawingGridEvery>
+ </w:WordDocument>
+</xml><![endif]-->
+<STYLE>@font-face {
+	font-family: Arial Unicode MS;
+}
+@font-face {
+	font-family: @Arial Unicode MS;
+}
+@page Section1 {size: 8.5in 11.0in; margin: .75in 1.25in .75in 1.25in; mso-header-margin: .5in; mso-footer-margin: .5in; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+P.MsoBodyText {
+	FONT-SIZE: 36pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoBodyText {
+	FONT-SIZE: 36pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoBodyText {
+	FONT-SIZE: 36pt; MARGIN: 0in 0in 0pt; COLOR: windowtext; LINE-HEIGHT: normal; FONT-FAMILY: "Times New Roman"; mso-bidi-font-size: 12.0pt; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+A:link {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlink {
+	COLOR: blue; TEXT-DECORATION: underline; text-underline: single
+}
+A:visited {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+SPAN.MsoHyperlinkFollowed {
+	COLOR: purple; TEXT-DECORATION: underline; text-underline: single
+}
+P {
+	FONT-SIZE: 12pt; MARGIN: 6pt 0in 12pt; COLOR: black; LINE-HEIGHT: 18pt; FONT-FAMILY: "Arial Unicode MS"; mso-pagination: widow-orphan
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+</HEAD>
+<BODY lang=EN-US style="tab-interval: .5in" vLink=purple link=blue>
+<DIV class=Section1>
+<DIV 
+style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 1pt; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.75pt solid">
+<P class=MsoBodyText 
+style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-border-bottom-alt: solid windowtext .75pt; mso-padding-alt: 0in 0in 1.0pt 0in">API 
+Functions</P></DIV>
+<P style="LINE-HEIGHT: normal; TEXT-ALIGN: center" align=center><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt"><!--[if gte vml 1]><v:shapetype 
+id=_x0000_t75 coordsize = "21600,21600" o:preferrelative = "t" o:spt = "75" 
+filled = "f" stroked = "f" path = " m@4@5 l@4@11@9@11@9@5 xe"><v:stroke 
+joinstyle = "miter"></v:stroke><v:formulas><v:f eqn = 
+"if lineDrawn pixelLineWidth 0 "></v:f><v:f eqn = "sum @0 1 0 "></v:f><v:f eqn = 
+"sum 0 0 @1 "></v:f><v:f eqn = "prod @2 1 2 "></v:f><v:f eqn = 
+"prod @3 21600 pixelWidth "></v:f><v:f eqn = 
+"prod @3 21600 pixelHeight "></v:f><v:f eqn = "sum @0 0 1 "></v:f><v:f eqn = 
+"prod @6 1 2 "></v:f><v:f eqn = "prod @7 21600 pixelWidth "></v:f><v:f eqn = 
+"sum @8 21600 0 "></v:f><v:f eqn = "prod @7 21600 pixelHeight "></v:f><v:f eqn = 
+"sum @10 21600 0 "></v:f></v:formulas><v:path o:extrusionok = "f" 
+gradientshapeok = "t" o:connecttype = "rect"></v:path><o:lock aspectratio="t" 
+v:ext="edit"></o:lock></v:shapetype><v:shape id=_x0000_i1027 
+style="WIDTH: 113.25pt; HEIGHT: 114.75pt" type = "#_x0000_t75" coordsize = 
+"21600,21600"><v:imagedata o:title="USB-logo-real" src = 
+"./api_files/image001.gif"></v:imagedata></v:shape><![endif]--><![if !vml]><img width=151 height=153
+src="./api_files/image001.gif" v:shapes="_x0000_i1027"><![endif]><o:p></o:p></SPAN></P>
+<P style="LINE-HEIGHT: normal"><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt">“The 
+Windows API (Application Programming Interface) consists of the functions, 
+messages, data structures, data types, and statements you can use in creating 
+applications that run under Microsoft Windows. The parts of the API you use most 
+are code elements for calling API functions from Windows. These include 
+procedure declarations (for the Windows functions), user-defined type 
+definitions (for data structures passed to those functions), and constant 
+declarations (for values passed to and returned from those 
+functions).”<o:p></o:p></SPAN></P>
+<P style="LINE-HEIGHT: normal; TEXT-ALIGN: right" align=right><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt">-Microsoft-<o:p></o:p></SPAN></P>
+<P><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt">“Before 
+an application can exchange data with a HID, it has to identify the device and 
+get information about its reports.<SPAN style="mso-spacerun: yes">&nbsp; 
+</SPAN>The application first finds out what HIDs are attached to the 
+system.<SPAN style="mso-spacerun: yes">&nbsp; </SPAN>It then examines 
+information about each until it finds one with the desired attributes.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>For a custom device, the application can 
+search for specific Vendor and Product IDs. Or the application can search for a 
+device of a particular type, such as a mouse or joystick.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>After finding a device, the application 
+can exchange information with it by sending and receiving 
+reports.”<o:p></o:p></SPAN></P>
+<P style="TEXT-ALIGN: right" align=right><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt">-USB 
+Complete-<o:p></o:p></SPAN></P>
+<P><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt">The 
+following table lists the API functions used in establishing communications and 
+exchanging data with a HID, such as our custom USB device.<SPAN 
+style="mso-spacerun: yes">&nbsp; </SPAN>The functions are listed in a typical 
+order that an application might call them.<o:p></o:p></SPAN></P>
+<TABLE 
+style="WIDTH: 714pt; BORDER-COLLAPSE: collapse; mso-padding-alt: 0in 0in 0in 0in" 
+cellSpacing=0 cellPadding=0 width=952 border=0>
+  <TBODY>
+  <TR style="HEIGHT: 21pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 242pt; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21pt" 
+    vAlign=bottom noWrap width=323>
+      <P class=MsoNormal><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">API 
+      Function</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 89pt; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21pt" 
+    vAlign=bottom noWrap width=119>
+      <P class=MsoNormal><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">DLL</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></B></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 383pt; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 1pt solid; HEIGHT: 21pt" 
+    vAlign=bottom noWrap width=511>
+      <P class=MsoNormal><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Purpose</SPAN></B><B><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></B></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_GetHidGuid</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Obtain the GUID for the HID 
+      class</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">SetupDiGetClassDevs</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">setupapi.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return a device information 
+      set containing</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">all 
+      of the devices in a specified class.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">SetupDiEnumDeviceInterfaces</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">setupapi.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return information about a 
+      device in the</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">device information 
+      set.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">SetupDiGetDeviceInterfaceDetail</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">setupapi.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return a device 
+      pathname.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">SetupDiDestroyDeviceInfoList</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">setupapi.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Free 
+      resources used by SetupDiGetClassDevs.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">CreateFile</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">kernel32.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Open 
+      communications with a device.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_GetAttributes</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return a Vendor ID, Product 
+      ID, and Version Number.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_GetPreparsedData</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return a handle to a buffer 
+      with information about the</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">&nbsp;</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">device's 
+      capabilities.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidP_GetCaps</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Return a structure describing 
+      the device's capabilities.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_FreePreparsedData</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Free 
+      resources used by HidD_GetPreparsedData.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">WriteFile</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">kernel32.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Send 
+      an Output report to the device.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">ReadFile</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">kernel32.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Read 
+      an Input report from the device.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_SetFeature</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Send 
+      a Feature report to the device.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">HidD_GetFeature</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">hid.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Read 
+      a Feature report from the device.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR>
+  <TR style="HEIGHT: 20.25pt">
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: windowtext 0.5pt solid; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">CloseHandle</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">kernel32.dll</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD>
+    <TD 
+    style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 1pt; BORDER-TOP: medium none; PADDING-LEFT: 1pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 1pt; BORDER-BOTTOM: windowtext 0.5pt solid; HEIGHT: 20.25pt" 
+    vAlign=bottom noWrap>
+      <P class=MsoNormal><SPAN style="FONT-SIZE: 16pt; FONT-FAMILY: Arial">Free 
+      resources used by CreateFile.</SPAN><SPAN 
+      style="FONT-SIZE: 16pt; FONT-FAMILY: Arial; mso-fareast-font-family: 'Arial Unicode MS'"><o:p></o:p></SPAN></P></TD></TR></TBODY></TABLE>
+<DIV 
+style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 1pt; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: windowtext 0.75pt solid">
+<P 
+style="BORDER-RIGHT: medium none; PADDING-RIGHT: 0in; BORDER-TOP: medium none; PADDING-LEFT: 0in; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; PADDING-TOP: 0in; BORDER-BOTTOM: medium none; mso-border-bottom-alt: solid windowtext .75pt; mso-padding-alt: 0in 0in 1.0pt 0in"><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt"><![if !supportEmptyParas]><![endif]>&nbsp;<o:p></o:p></SPAN></P></DIV>
+<P><SPAN 
+style="FONT-SIZE: 18pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 8.0pt"><A 
+href="http://www2.hawaii.edu/~hermany/functions.htm">Back</A> <A 
+href="http://www2.hawaii.edu/~hermany/hid.htm">Next</A><o:p></o:p></SPAN></P></DIV></BODY></HTML>
